@@ -40,7 +40,7 @@ exports.run = (client, message, args, level) => {
       if (level < client.levelCache[command.conf.permLevel]) return;
       const embed = new Discord.RichEmbed()
       .setTitle(`${command.help.name}`)
-      .setDescription(`${command.help.description}\nusage ${command.help.usage}\naliases ${command.conf.aliases.join(", ")}\n= ${command.help.name} =`, {code:"asciidoc"});
+      .setDescription(`**Description:** ${command.help.description}\n\n**Usage:** ${command.help.usage}\n\n**Aliases:** ${command.conf.aliases.join(", ")}`, {code:"asciidoc"});
       message.channel.send({embed})
     }
   }
