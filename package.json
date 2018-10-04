@@ -10,7 +10,7 @@
   "engines": {
     "node": "8.x"
   },
-  "author": "Krunniee",,
+  "author": "Krunniee",
   "license": "MIT",
   "dependencies": {
     "better-sqlite-pool": "^0.1.2",
