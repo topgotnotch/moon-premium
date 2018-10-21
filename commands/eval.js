@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 exports.run = async (client, message, args) => { 
   if (message.author.id === "477657921384087552")
-  return message.reply('**You Lack The Permission Level Of `Bot Owner`**')
+  return message.reply('**You Lack The Permission Level Of `Bot Owner`**');
   const code = args.join(' ');
   try {
     const evaled = eval(code);
